@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# PyCharm
+.idea
+
+# Node.js
+node_modules
+
+# Yarn
+yarn.lock

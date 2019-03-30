@@ -1,0 +1,25 @@
+{% extends "monitor:base.html" %}
+{% block title %}Configuration{% end %}
+{% block content %}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Configuration</h1>
+    <div>
+        To change the configurations go to conf/firenado.yml file.
+    </div>
+</div>
+
+<h2>Application</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <tbody>
+        {% for item, value in conf['app'].items() %}
+        <tr>
+            <th style="width:80px">{{ item }}</th>
+            <td>{{ value }}</td>
+        </tr>
+        {% end %}
+        </tbody>
+    </table>
+</div>
+{% end %}
